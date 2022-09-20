@@ -1,0 +1,75 @@
+.div_container {
+  height: 20.625rem;
+  width: 90%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border: 6px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 8%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -webkit-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -moz-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+}
+
+.card_wallet {
+  height: 60%;
+  width: 60%;
+  min-height: 200px;
+  background: rgb(36, 90, 140);
+  background: linear-gradient(90deg, rgb(9, 60, 108) 5%, rgb(13, 57, 97) 90%);
+  color: rgb(221, 212, 212);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  -webkit-box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  -moz-box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  opacity: 0.86;
+  z-index: 0;
+  padding-bottom: 1rem;
+}
+.div_container :hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.head_wallet {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.current_balance {
+  margin: auto;
+  font-size: 54px;
+  margin-top: 30px;
+}
+.card_number {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1725px) {
+  .card_wallet {
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .div_container {
+    height: max-content;
+    min-height: 200px;
+    max-width: 350px;
+  }
+  .div_container h1 {
+    display: none;
+  }
+  .card_wallet {
+    width: fit-content;
+    min-width: 320px;
+  }
+}

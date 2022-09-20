@@ -1,0 +1,123 @@
+.div_container {
+  height: 20.625rem;
+  width: 40.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border: 6px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 8%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -webkit-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -moz-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+}
+
+.operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+}
+
+.reason {
+  text-align: center;
+  width: 150px;
+  word-wrap: break-word;
+}
+
+.button_operation {
+  border: 0;
+  border-radius: 24px;
+  width: 30%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgb(60, 120, 178);
+  background: linear-gradient(90deg, rgb(9, 60, 108) 5%, rgb(8, 72, 131) 90%);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+.button_operation:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.mount_less {
+  color: rgb(183, 34, 34);
+}
+
+.mount_more {
+  color: rgb(6, 137, 6);
+}
+
+@media screen and (max-width: 1725px) {
+  .div_container {
+    max-width: 41.25rem;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .div_container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 920px) {
+  .div_container {
+    margin-bottom: 30px;
+  }
+  .operation {
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: -220px;
+    padding: 0px;
+    border-radius: 4%;
+    margin: 0.2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .div_container {
+    width: max-content;
+    min-width: 300px;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 640px;
+  }
+  .operation h3 {
+    width: 120px;
+    text-align: center;
+  }
+  .operation {
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 130px;
+    padding: 0px;
+    border-radius: 4%;
+    margin: 0.2rem;
+    text-decoration: none;
+    border-top: 2px solid rgb(32, 78, 185);
+  }
+  .operation img {
+    display: none;
+  }
+  .button_operation {
+    height: 80px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+}

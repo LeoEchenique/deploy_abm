@@ -1,0 +1,116 @@
+.div_container {
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  color: black;
+}
+.home_content_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.wallet {
+  height: max-content;
+  width: max-content;
+  margin: auto;
+  min-width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+.last_operation {
+  height: max-content;
+  width: max-content;
+  margin: auto;
+  min-width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last_ten_operations {
+  height: 24rem;
+  width: 91.5rem;
+  color: black;
+  border: 1px solid #f8f9fa;
+  background-color: #f8f9fa;
+  display: flex;
+  border-radius: 6%;
+  justify-content: center;
+  box-shadow: -2px 1px 10px 9px rgba(142, 154, 175, 0.87);
+  -webkit-box-shadow: -2px 1px 9px 9px rgba(142, 154, 175, 0.87);
+  -moz-box-shadow: -2px 1px 9px 9px rgba(142, 154, 175, 0.87);
+  z-index: 1;
+  padding: 10px;
+  margin-left: 40px;
+  margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 1725px) {
+  .div_container {
+    flex-direction: column;
+  }
+  .wallet {
+    margin-top: 10rem;
+    padding-left: 0px;
+  }
+  .last_operation {
+    margin-top: 10rem;
+  }
+  .last_ten_operations {
+    margin-top: 6rem;
+    width: 90rem;
+    margin-left: 0px;
+  }
+  .home_content_container {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .wallet {
+    margin-top: 11.4rem;
+    margin-bottom: -8rem;
+  }
+  .last_ten_operations {
+    width: 60rem;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .last_ten_operations {
+    margin: 0px 30px 30px 30px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .wallet {
+    margin-top: 3rem;
+  }
+  .last_ten_operations {
+    margin-top: 0.4rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .last_ten_operations {
+    width: 640px;
+    padding-right: 0px;
+    margin: 0px;
+    margin-top: 0.4rem;
+    border-radius: 6%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .last_ten_operations {
+    width: 100%;
+    border-radius: 0%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .last_ten_operations {
+    margin: 0px;
+  }
+  .last_operation {
+    max-width: 370px;
+  }
+}

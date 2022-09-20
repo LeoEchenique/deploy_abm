@@ -1,0 +1,100 @@
+.div_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  opacity: 0.97;
+  image-resolution: 100%;
+  background-image: url("http://res.cloudinary.com/leo-echenique/image/upload/v1661872776/dzbo3dauoepqaoas2wrt.jpg");
+}
+.err {
+  font-size: 16px;
+  color: rgb(226, 82, 82);
+  margin-top: -30px;
+}
+.sign {
+  height: 100vh;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0e1111;
+  background: linear-gradient(90deg, rgb(8, 36, 62) 5%, rgb(23, 38, 52) 90%);
+  box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  -webkit-box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  -moz-box-shadow: -4px -4px 24px 9px rgba(30, 150, 252, 0.17);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.form {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 10%;
+  height: 65%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  background: linear-gradient(90deg, rgb(27, 74, 119) 5%, rgb(2, 47, 88) 90%);
+  box-shadow: -4px -4px 20px 2px rgba(30, 150, 252, 0.17);
+}
+.log_button {
+  border: 0;
+  border-radius: 24px;
+  width: 70%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  background: #0e1111;
+  background: linear-gradient(90deg, rgb(4, 27, 48) 5%, rgb(4, 27, 48) 90%);
+  box-shadow: -4px -4px 20px 2px rgba(30, 150, 252, 0.17);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.input {
+  border-radius: 24px;
+  border: none;
+  height: 30px;
+  width: 230px;
+  padding: 4px;
+}
+.log_button:hover {
+  outline: 2px solid rgb(4, 81, 14);
+  opacity: 0.9;
+  transition: 1s;
+  border: none;
+}
+*:focus {
+  outline: none;
+}
+.label {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .sign {
+    margin: auto;
+    height: 600px;
+  }
+  .log_title {
+    text-align: center;
+  }
+  .err{
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .sign {
+    text-align: center;
+  }
+}

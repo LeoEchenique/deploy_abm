@@ -1,0 +1,206 @@
+.div_container {
+  display: flex;
+}
+
+.form_box {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin: 2%;
+  color: black;
+  border: 2px solid #f8f9fa;
+  background-color: #f8f9fa;
+  border-radius: 8%;
+  box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -webkit-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  -moz-box-shadow: -2px 1px 18px 9px rgba(142, 154, 175, 0.87);
+  background-image: url("http://res.cloudinary.com/leo-echenique/image/upload/v1661872776/dzbo3dauoepqaoas2wrt.jpg");
+  opacity: 0.97;
+}
+
+.container_form {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40% 2% 40% 2%;
+  background: linear-gradient(90deg, rgb(40, 90, 137) 5%, rgb(8, 41, 72) 90%);
+  opacity: 0.9;
+}
+.container_form label {
+  color: white;
+  text-shadow: 11px 11px 20px black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.form {
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form_field {
+  font-family: inherit;
+  width: 60%;
+  border: 0;
+  text-align: center;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 2rem;
+  color: white;
+  background: transparent;
+  transition: border-color 0.2s;
+  opacity: 1;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.err {
+  font-size: 24px;
+  color: rgb(224, 73, 73);
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.H2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: -12px;
+  text-shadow: 8px 4px 5px rgb(50, 50, 50);
+}
+
+.submit {
+  border: 0;
+  border-radius: 24px;
+  width: 60%;
+  color: rgb(17, 79, 137);
+  font-size: 18px;
+  padding: 16px;
+  box-shadow: 2px 4px 12px rgba(184, 184, 185, 0.507);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.submit:hover {
+  background: rgb(153, 156, 149);
+  color: rgb(17, 79, 137);
+  outline: 2px solid rgb(28, 0, 119);
+  transition: 1s;
+}
+.Select {
+  background: linear-gradient(90deg, rgb(40, 90, 137) 5%, rgb(8, 41, 72) 90%);
+  opacity: 0.8;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.Select:focus {
+  opacity: 1;
+}
+.option {
+  background-color: rgb(40, 90, 137);
+  color: white;
+  max-width: 20px;
+}
+.option:disabled {
+  color: rgb(135, 135, 135);
+}
+.form_field[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form_field::-webkit-outer-spin-button,
+.form_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1725px) {
+  .div_container {
+    height: 100vh;
+  }
+  .form_box {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .div_container {
+    height: 100vh;
+  }
+
+  .submit {
+    padding: 1rem;
+    word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .div_container {
+    height: 80vh;
+  }
+  .form_box {
+    align-items: center;
+    margin-top: 5rem;
+    z-index: 0;
+    height: 80vh;
+  }
+  .container_form {
+    margin: auto;
+  }
+  .submit {
+    padding: 1rem;
+    word-break: break-all;
+    width: max-content;
+  }
+  .Select {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  .nav_container {
+    position: fixed;
+    width: 100%;
+    height: max-content;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container_form {
+    border-radius: 2%;
+    margin: auto;
+  }
+  .form {
+    align-items: center;
+    width: max-content;
+  }
+
+  .form_field::placeholder {
+    font-size: 1.3rem;
+  }
+  .Select {
+    font-size: 1.3rem;
+    padding: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form_box {
+    height: 80vh;
+  }
+  .Select {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}
