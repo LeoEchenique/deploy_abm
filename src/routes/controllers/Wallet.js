@@ -18,4 +18,8 @@ router.get("/:token", async (req, res) => {
     }
 });
 
+router.get("/hi", (req, res) => {
+    res.status(202).send("IT WORKS FINE BRO")
+})
+
 module.exports = router;
