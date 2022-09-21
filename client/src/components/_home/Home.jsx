@@ -13,7 +13,7 @@ export default function Home() {
   let user = JSON.parse(localStorage.getItem("user"));
 
   const currentBalance = async () => {
-    let newBalance = await axios.get(`http://localhost:3001/Wallet/${user}`);
+    let newBalance = await axios.get(`https://abmproject2.herokuapp.com/Wallet/${user}`);
     setBalance(newBalance.data);
   };
 

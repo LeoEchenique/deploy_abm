@@ -40,12 +40,12 @@ export default function BeforeHome() {
     if (validate === true) {
       try {
         let res = await axios.post(
-          "http://localhost:3001/auth/createUser",
+          "https://abmproject2.herokuapp.com/auth/createUser",
           form
         );
         if (res.data.Token) {
           localStorage.setItem("user", JSON.stringify(res.data));
-          window.location.replace("http://localhost:3000/Home");
+          window.location.replace("VERCEL DOMAIN/Home");
         }
       } catch (error) {
         alert(error.response.data);
@@ -60,10 +60,10 @@ export default function BeforeHome() {
     let validate = validator(form, "log_in");
     if (validate === true) {
       try {
-        let res = await axios.post("http://localhost:3001/auth/logUser", form);
+        let res = await axios.post("https://abmproject2.herokuapp.com/auth/logUser", form);
         if (res.data.logged === true) {
           localStorage.setItem("user", JSON.stringify(res.data));
-          window.location.replace("http://localhost:3000/Home");
+          window.location.replace("VERCEL DOMAIN/Home");
         }
       } catch (error) {
         alert(error.response.data); // here sweetAlert saying that user doesnt exist or an error ocurred with the data provided
@@ -80,7 +80,7 @@ export default function BeforeHome() {
       title: "Nice! you will be redirected shortly",
       showConfirmButton: false,
       timer: 1500,
-      didClose: () => window.location.replace("http://localhost:3000/Home"),
+      didClose: () => window.location.replace("VERCEL DOMAIN/Home"),
     });
   };
 

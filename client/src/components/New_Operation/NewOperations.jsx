@@ -22,7 +22,7 @@ export default function NewOperation() {
 
   const getOp = async () => {
     if (id) {
-      let operation = await axios.get(`http://localhost:3001/Operations/${id}`);
+      let operation = await axios.get(`https://abmproject2.herokuapp.com/${id}`);
       setUpdateOp(operation.data);
       setForm({
         ...form,
@@ -49,7 +49,7 @@ export default function NewOperation() {
     if (updateOp !== null) {
       if (success === true) {
         await axios
-          .put(`http://localhost:3001/Operations/UpDate/${updateOp.Id}`, form)
+          .put(`https://abmproject2.herokuapp.com/Operations/UpDate/${updateOp.Id}`, form)
           .then(() => {
             setSwali(true);
           });
@@ -58,7 +58,7 @@ export default function NewOperation() {
     }
     if (success === true) {
       await axios
-        .post("http://localhost:3001/Operations/New", form)
+        .post("https://abmproject2.herokuapp.com/Operations/New", form)
         .then(() => setSwali(true))
         .catch((err) => alert(err.response.data));
     } else {
@@ -72,7 +72,7 @@ export default function NewOperation() {
       title: "Nice! you will be redirected shortly",
       showConfirmButton: false,
       timer: 1500,
-      didClose: () => window.location.replace("http://localhost:3000/Home"),
+      didClose: () => window.location.replace("VERCEL-DOMAIN/Home"),
     });
   };
   return (

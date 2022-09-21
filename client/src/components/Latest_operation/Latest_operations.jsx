@@ -13,7 +13,7 @@ export default function LatestOperation({ currentBalance }) {
 
   const getOperations = async () => {
     let operation = await axios.get(
-      `http://localhost:3001/Operations/Latest/${user.Token}`
+      `https://abmproject2.herokuapp.com/Operations/Latest/${user.Token}`
     );
     setOperations(operation.data);
   };
@@ -23,7 +23,7 @@ export default function LatestOperation({ currentBalance }) {
   }, []);
 
   async function handleDelete(id) {
-    await axios.delete(`http://localhost:3001/Operations/Delete/${id}`);
+    await axios.delete(`https://abmproject2.herokuapp.com/Operations/Delete/${id}`);
     getOperations();
   }
 

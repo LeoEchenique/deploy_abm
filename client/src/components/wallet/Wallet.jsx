@@ -9,7 +9,7 @@ export default function Wallet() {
   let user = JSON.parse(localStorage.getItem("user"));
 
   const getWallet = async () => {
-    let wallet = await axios.get(`http://localhost:3001/Wallet/${user.Token}`);
+    let wallet = await axios.get(`https://abmproject2.herokuapp.com/Wallet/${user.Token}`);
     setWallet(wallet.data);
   };
 

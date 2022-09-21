@@ -11,7 +11,7 @@ export default function Last_operation() {
 
   const getOperation = async () => {
     let last_operation = await axios.get(
-      `http://localhost:3001/Operations/Latest/${user.Token}`
+      `https://abmproject2.herokuapp.com/Operations/Latest/${user.Token}`
     );
 
     setOperation(last_operation.data[0]);
