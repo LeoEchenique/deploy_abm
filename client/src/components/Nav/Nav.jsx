@@ -21,7 +21,7 @@ export default function Nav() {
   const logout = () => {
     localStorage.removeItem("user");
     setLogged(null);
-    window.location.replace("/Home");
+    window.location.replace("/");
   };
 
   const handleBurger = () => {
