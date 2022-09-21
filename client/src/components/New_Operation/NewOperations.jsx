@@ -72,7 +72,7 @@ export default function NewOperation() {
       title: "Nice! you will be redirected shortly",
       showConfirmButton: false,
       timer: 1500,
-      didClose: () => window.location.replace("VERCEL-DOMAIN/Home"),
+      didClose: () => window.location.replace("/Home"),
     });
   };
   return (

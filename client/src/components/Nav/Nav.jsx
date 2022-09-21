@@ -21,7 +21,7 @@ export default function Nav() {
   const logout = () => {
     localStorage.removeItem("user");
     setLogged(null);
-    window.location.replace("HOME-VERCEL/Home");
+    window.location.replace("/Home");
   };
 
   const handleBurger = () => {
