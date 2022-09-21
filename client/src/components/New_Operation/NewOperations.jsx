@@ -7,6 +7,8 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import { validator } from "../../helpers/Validator";
+
+
 export default function NewOperation() {
   let { id } = useParams();
   let user = JSON.parse(localStorage.getItem("user"));
@@ -22,7 +24,7 @@ export default function NewOperation() {
 
   const getOp = async () => {
     if (id) {
-      let operation = await axios.get(`https://abmproject2.herokuapp.com/${id}`);
+      let operation = await axios.get(`https://abmproject2.herokuapp.com/Operations/${id}`);
       setUpdateOp(operation.data);
       setForm({
         ...form,
