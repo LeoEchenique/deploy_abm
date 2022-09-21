@@ -36,7 +36,7 @@ export default function Last_operation() {
           )}
         </div>
       ) : (
-        <h1>You don't have any operations yet, make one!</h1>
+        <h2 className={style.noneOp}>You don't have any operations yet, make one!</h2>
       )}
       <Link
         className={style.button_operation}

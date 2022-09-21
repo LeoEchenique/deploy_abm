@@ -57,7 +57,9 @@
 .mount_more {
   color: rgb(6, 137, 6);
 }
-
+.noneOp{
+  text-align: center;
+}
 @media screen and (max-width: 1725px) {
   .div_container {
     max-width: 41.25rem;
