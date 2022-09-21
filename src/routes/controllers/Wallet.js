@@ -2,6 +2,11 @@ const { Router } = require("express");
 const { User } = require("../../db");
 const router = Router();
 
+
+router.get("/hi", (req, res) => {
+    res.status(202).send("IT WORKS FINE BRO")
+})
+
 router.get("/:token", async (req, res) => {
     const { token } = req.params;
 
@@ -18,8 +23,6 @@ router.get("/:token", async (req, res) => {
     }
 });
 
-router.get("/hi", (req, res) => {
-    res.status(202).send("IT WORKS FINE BRO")
-})
+
 
 module.exports = router;
