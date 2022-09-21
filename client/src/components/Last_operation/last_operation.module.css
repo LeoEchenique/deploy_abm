@@ -58,7 +58,9 @@
   color: rgb(6, 137, 6);
 }
 .noneOp{
-  text-align: center;
+  margin:auto;
+  margin-top: 3.5rem;
+  margin-bottom: 4.9rem; 
 }
 @media screen and (max-width: 1725px) {
   .div_container {
@@ -118,8 +120,14 @@
   }
   .button_operation {
     height: 80px;
-    text-align: center;
     padding: 0px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .noneOp{
+    inline-size: 350px;
+    text-align: center;
+    overflow-wrap: break-word;
   }
 }

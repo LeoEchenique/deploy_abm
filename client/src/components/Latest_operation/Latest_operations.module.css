@@ -42,6 +42,10 @@
 .mount_more {
   color: rgb(6, 137, 6);
 }
+.alternative_operations{
+  text-align: center;
+  margin-top: 6rem;
+}
 .icon_delete:hover {
   transform: rotate(360deg);
   transition: 0.5s;
